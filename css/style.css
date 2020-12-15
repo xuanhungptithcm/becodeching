@@ -1,0 +1,15 @@
+.text{
+  background-color: #ddd;
+  width: 200px;
+  margin: 0 auto;
+  color: tomato;
+  font-size: 10px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-column-gap: 3;
+}
