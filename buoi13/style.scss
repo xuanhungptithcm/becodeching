@@ -1,0 +1,63 @@
+@import './variable.scss';
+
+//TODO: 1.box-sizing
+* {
+  box-sizing: border-box;
+}
+
+// TODO: box-sizing
+body{
+  background-color: $bg-color;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+}
+
+#main {
+  height: 200vh;
+  // TODO:
+  padding-top: #{$header-height};
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  .main-menu {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    position: fixed;
+
+    // TODO:
+    width: 100%;
+
+    // TODO: Hoặc
+    left: 0;
+    right: 0;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    ul li {
+      display: block;
+      margin: 0 10px;
+      text-transform: uppercase;
+      color: $text-color;
+      font-size: 16px;
+      padding: 7px 12px;
+      cursor: pointer;
+      &:hover{
+        border-radius: #{$radius-button};
+        background-color: $text-color;
+        color: $primary-color;
+      }
+    }
+    .active {
+      border-radius: #{$radius-button};
+      background-color: $text-color;
+      color: $primary-color;
+    }
+  }
+}

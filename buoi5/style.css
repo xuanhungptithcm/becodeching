@@ -1,45 +1,16 @@
-body{
-  background-color: #79D6cc;
-}
 
-a {
-  text-decoration: none;
-  color: #333333;
+span{
+  display: block;
 }
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
-.navbars ul {
-  display: flex;
-}
-
-.container {
-  max-width: 1270px;
-  width: 90%;
-  margin: 0 auto;
-}
-header{
-  /* margin-top: 10px;
-   */
-   padding-top: 20px;
-}
-
-.navbars ul li a{
-  text-transform: capitalize;
+p ~ span{
+  color: red;
   font-size: 20px;
-  padding: 0 20px;
-  color: #23385C;
 }
 
-.logo a{
-  background-color: #23385C;
-  color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+p::after
+p::before
+
+
+p:nth-child()
+p:nth-last-child()
+p:

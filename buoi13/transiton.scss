@@ -1,0 +1,33 @@
+  .block{
+    background-color: #ef4f4f;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    transition: all 1s ease;
+    opacity: 0;
+    &:hover{
+      width: 900px;
+      background-color: blue;
+      opacity: 1;
+    }
+    &.tran1{
+      transition-timing-function: ease-in;
+    }
+    &.tran2{
+      transition-timing-function: ease-out;
+    }
+    &.tran3{
+      transition-timing-function: ease-in-out;
+    }
+    &.tran4{
+      transition-timing-function: linear;
+    }
+
+  }
