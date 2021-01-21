@@ -1,8 +1,34 @@
-p{
-  font-size: 50px;
+img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-
-
-
-
-
+.container{
+  width: 200px;
+  height: 133px;
+  overflow: hidden;
+  position: relative;
+}
+.container img{
+  width: 200px;
+  height: 133px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container img:nth-child(1) {
+  transition: all 0.5s linear 0.5s;
+  transform: scale(1.4) translateX(200px);
+  z-index: 3;
+}
+.container img:nth-child(2) {
+  transition: all 0.5s linear 1s;
+  transform: scale(1.8) translateX(200px);
+  z-index: 2;
+}
+.container img:nth-child(3) {
+  transition: all 0.5s linear 1.5s;
+  transform: scale(2.2);
+  z-index: 1;
+}
